@@ -10,10 +10,10 @@
 - Members can borrow books with conditions
   - [&check;] Members may not borrow more than 2 books
   - [&check;] Borrowed books are not borrowed by other members
-  - [&check] Member is currently not being penalized
+  - [&check;] Member is currently not being penalized
 - Member returns the book with conditions
-  - [&check] The returned book is a book that the member has borrowed
-  - [&check] If the book is returned after more than 7 days, the member will be subject to a penalty. Member with penalty cannot able to borrow the book for 3 days
+  - [&check;] The returned book is a book that the member has borrowed
+  - [&check;] If the book is returned after more than 7 days, the member will be subject to a penalty. Member with penalty cannot able to borrow the book for 3 days
 - Check the book
   - [&check;] Shows all existing books and quantities
   - [&check;] Books that are being borrowed are not counted
@@ -83,8 +83,8 @@
 
 - [&check;] it should be use any framework, but prefered [NestJS](https://nestjs.com/) Framework Or [ExpressJS](https://expressjs.com/)
 - [ ] it should be use Swagger as API Documentation
-- [ ] it should be use Database (SQL/NoSQL)
-- [ ] it should be open sourced on your github repo
+- [&check;] it should be use Database (SQL/NoSQL)
+- [&check;] it should be open sourced on your github repo
 
 ## Extras
 
