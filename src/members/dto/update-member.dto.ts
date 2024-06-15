@@ -1,4 +1,23 @@
-import { PartialType } from '@nestjs/mapped-types';
-import { CreateMemberDto } from './create-member.dto';
+import { ApiProperty } from '@nestjs/swagger';
+import { IsAlpha, IsEmail, IsNotEmpty } from 'class-validator';
 
-export class UpdateMemberDto extends PartialType(CreateMemberDto) {}
+export class UpdateMemberDto {
+  @ApiProperty({
+    example: "Gina Jamiila",
+    description: "Name of member",
+    required: true,
+    type: "string"
+  })
+  @IsNotEmpty()
+  name: string;
+
+  @ApiProperty({
+    example: "gjamiila@rmail.com",
+    description: "Email of member",
+    required: true,
+    type: "email"
+  })
+  @IsNotEmpty()
+  @IsEmail()
+  email: string;
+}

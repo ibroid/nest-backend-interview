@@ -3,9 +3,11 @@
 ## How to install
 1. Clone the repo
 2. Run `npm install` or `yarn install`
-3. Configure the `.env` file.
-4. Run `npx prisma db push`
-5. Run `npm run dev` or `yarn dev`
+3. Create self sign SSL certificate `npm run make:ssl` 
+4. Configure the `.env` file.
+5. Run `npx prisma db push` && `npx prisma db seed`
+6. Run `npm run dev` or `yarn dev`
+7. Open `https://localhost:3000/doc`
 
 ## Entities
 
