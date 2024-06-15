@@ -1,5 +1,12 @@
 # Backend Test Case
 
+## How to install
+1. Clone the repo
+2. Run `npm install` or `yarn install`
+3. Configure the `.env` file.
+4. Run `npx prisma db push`
+5. Run `npm run dev` or `yarn dev`
+
 ## Entities
 
 - Member
